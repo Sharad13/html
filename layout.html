@@ -66,7 +66,7 @@
                 
             }
             .box1,.box2,.box3,.box4{
-               background-color: rgb(207, 189, 189);
+               background-color: white;
                 border-radius: 2px;
 
                 padding: 10px;
@@ -78,7 +78,7 @@
                 color:white
             }
            
-            @media(min-width:500px){
+            @media(max-width:1370px){
             #box2{
                 display:grid;
                grid-gap:100px;
@@ -87,9 +87,21 @@
                "a b c"
                 ;
             }
-            
-            
             }
+          
+            @media(max-width:500px){
+            #box2{
+                display:grid;
+               grid-gap:100px;
+                justify-content: center;
+                grid-template:
+               "a"
+               "b"
+               "c"
+                ;
+            }
+            }
+            
             .block1{
                 grid-area:a;
                 height:500px;
