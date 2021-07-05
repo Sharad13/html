@@ -1,0 +1,213 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(240, 230, 230);
+            }
+            #sch{
+                /* border:1px solid black; */
+                height:120px;
+                padding:30px;
+                margin-left: 35px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 25px;
+            }
+            #sch > div{
+                height:83px;
+                width:320px;
+                float:left;
+                
+                border-radius: 8px;
+                padding:20px
+            }
+            .sch1{
+                background-color: rgba(253, 169, 14, 0.822);
+                margin-left: 3px;
+            }
+            .sch2{
+                background-color: rgb(0, 89, 255);
+                margin-left: 80px;
+            }
+            .sch3{
+                background-color: rgb(27, 172, 230);
+                margin-left: 75px;
+            }
+            .img{
+                border-radius: 50px;
+                float:left
+            }
+            .text{
+                float: left;
+                height:80px;
+                font-size: 27px;
+                color: white;
+                margin-top: 7px;
+                margin-left: 20px;
+                width:200px
+            }
+            p{
+                margin-top:5px;
+                font-size: 20px;
+            }
+            .title{
+                font-size: 50px;
+                text-align: center;
+                font-weight: bold;
+                color:rgb(58, 55, 55);
+                margin-bottom: 50px;
+            }
+            #box{
+                display:grid;
+                grid-template-columns:150px 150px 150px 150px;
+                grid-template-rows: 40px;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 80px;
+                
+            }
+            .box1,.box2,.box3,.box4{
+               background-color: rgb(207, 189, 189);
+                border-radius: 2px;
+
+                padding: 10px;
+                color:rgb(58, 55, 55);
+                font-size: 18px;
+            } 
+            .box1{
+                background-color: rgb(27, 172, 230);
+                color:white
+            }
+           
+            @media(min-width:500px){
+            #box2{
+                display:grid;
+               grid-gap:100px;
+                justify-content: center;
+                grid-template:
+               "a b c"
+                ;
+            }
+            
+            
+            }
+            .block1{
+                grid-area:a;
+                height:500px;
+                width:350px;
+                margin-left: 40px;
+                border-radius: 3px;
+                background-color: white;
+                
+            }
+            .block2{
+                grid-area:b;
+                height:500px;
+                width:350px;
+                border-radius: 3px;
+                background-color: white;
+            }
+            .block3{
+                grid-area:c;
+                height:500px;
+                width:355px;
+                border-radius: 3px;
+                background-color: white;
+            }
+            
+            .agr{
+                padding-top: 20px;
+                margin-left:10px
+            }
+            .che{
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .lorem{
+                height:100px;
+                width:300px;
+                margin-left:10px ;
+                margin-top: 20px;
+                color:rgb(100, 96, 96)
+            }
+            .button{
+                background-color: white;
+                border:1px solid rgb(7, 141, 194);
+                color:rgb(7, 142, 195);
+                text-align: center;
+                margin-left: 30px;
+                width:150px;
+                height:45px
+            }
+        </style>
+    </head>
+    <body>
+        <div id="sch">
+            <div class=sch1>
+                <image class=img src="https://via.placeholder.com/80x80"></image>
+                <div class="text">Scholorship 
+                    <p>Available</p>
+                </div>
+
+            </div>
+            <div class=sch2>
+                <image class=img src="https://via.placeholder.com/80x80"></image>
+                <div class="text">Scholorship 
+                    <p>Available</p>
+                </div>
+            </div>
+            <div class=sch3>
+                <image class=img src="https://via.placeholder.com/80x80"></image>
+                <div class="text">Scholorship 
+                    <p>Available</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="title">Popular Programs</div>
+        <div id="box">
+            <div class=" box1">Graduate</div>
+            <div class="box2">Postgraduate</div>
+            <div class="box3">PHD Scholorship</div>
+            <div class="box4">Training</div>
+
+        </div>
+        <div id="box2">
+            <div class=" block1">
+                <image src="https://via.placeholder.com/350x200"></image>
+                <div class="info">
+                    <p class="agr">Agriculture</p>
+                    <span class="agr che">Chemical Engineering</span>
+                  <br>
+                 <span class="agr">
+                 <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, distinctio natus? Deserunt enim tempore fuga, similique sint magni nobis dolorum!
+
+                 </div>
+                 </span>
+                     <input class="button" type="button" value="Apply Now">
+                </div> 
+        </div>
+        <div class="block2"><image src="https://via.placeholder.com/350x200"></image>
+            <div class="info">
+                <p class="agr">Agriculture</p>
+                <span class="agr che">Chemical Engineering</span>
+              <br>
+             <span class="agr">
+             <div class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non delectus possimus rem dolores et soluta sit omnis enim cumque obcaecati?</div>
+             </span>
+                 <input class="button" type="button" value="Apply Now">
+            </div> 
+        </div>
+        <div class="block3"><image src="https://via.placeholder.com/355x200"></image>
+            <div class="info">
+                <p class="agr">Agriculture</p>
+                <span class="agr che">Chemical Engineering</span>
+              <br>
+             <span class="agr">
+             <div class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae mollitia deleniti modi ex veniam iste. Ratione ipsa minus eius deserunt?</div>
+             </span>
+                 <input class="button" type="button" value="Apply Now">
+            </div> 
+        </div>
+        
+    </body>
+</html>
